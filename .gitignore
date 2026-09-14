@@ -1,12 +1,41 @@
-*.iml
+# Gradle
 .gradle/
-.idea/
+**/build/
+.kotlin/
+
+# Local configuration — never commit. Holds sdk.dir and optional HotMic QA credentials.
 local.properties
-.DS_Store
-build/
+
+# Keystores and credential files
+*.jks
+*.keystore
+*.p12
+*.pem
+*.env
+.env*
+secrets.properties
+credentials.properties
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
 captures/
+.externalNativeBuild/
+.cxx/
+
+# Build outputs
 *.apk
 *.aab
 *.ap_
 *.dex
-.cxx/
+*.class
+bin/
+gen/
+out/
+
+# OS
+.DS_Store
+Thumbs.db
