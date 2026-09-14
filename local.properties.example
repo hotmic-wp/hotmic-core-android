@@ -1,0 +1,9 @@
+# Copy to local.properties (gitignored). Never commit real values.
+#
+# Android SDK location (Android Studio usually writes this for you).
+sdk.dir=/opt/homebrew/share/android-commandlinetools
+
+# Optional: prefill the Example app's Settings screen for local QA.
+# Leave blank to enter credentials in the app. Never commit real keys or JWTs.
+hotmic.apiKey=
+hotmic.accessToken=
