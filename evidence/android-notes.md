@@ -1,7 +1,7 @@
 # HEM-96 Android — running notes (changes, iOS↔Android API differences, opinions)
 
 Tracker: https://github.com/mchusma/hotmic-engineering-manager/issues/96 · branch `mchusma/hem-96-public-sample`
-· fixes on `hotmic-core-android-source` `mchusma/hem-96-fixes` · load harness on `mchusma/hem-96-core-load`.
+· fixes on `hotmic-core-android-source` `hem/96-fixes` (PR #5) · load harness on `hem/96-core-load` (PR #6).
 Date: 2026-09-18. Evidence: `evidence/android-2026-09-18/` (logs redacted; no tokens in git).
 
 ## Environment
