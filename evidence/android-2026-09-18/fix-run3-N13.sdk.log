@@ -1,0 +1,138 @@
+--------- beginning of main
+09-18 16:46:02.037 I/HotMicCore(11188): Request finished: POST /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/session/ status=200 ms=1417
+09-18 16:46:02.100 I/HotMicCore(11188): Request finished: POST /presence status=200 ms=54
+09-18 16:46:02.101 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/viewers status=200 ms=52
+09-18 16:46:02.161 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/feed/ status=200 ms=113
+09-18 16:46:05.566 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=389
+09-18 16:46:08.583 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=403
+09-18 16:46:11.216 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=30
+09-18 16:46:14.225 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=33
+09-18 16:46:17.221 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=26
+09-18 16:46:20.234 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=36
+09-18 16:46:23.226 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=25
+09-18 16:46:26.237 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=28
+09-18 16:46:29.241 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=29
+09-18 16:46:32.245 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=31
+09-18 16:46:35.252 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=34
+09-18 16:46:38.253 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=30
+09-18 16:46:51.226 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data The request was cancelled.
+09-18 16:47:01.233 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data The request was cancelled.
+09-18 16:47:01.245 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:47:02.054 E/HotMicCore(11188): Request failed: POST /presence Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:47:02.258 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:47:05.266 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:47:08.262 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:47:11.264 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:47:14.267 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:47:17.269 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:47:20.277 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:47:23.281 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:47:26.283 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:47:29.287 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:47:32.298 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:47:35.297 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:47:38.302 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:47:41.301 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:47:44.307 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:47:47.311 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:47:50.314 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:47:50.316 E/HotMicCore(11188): Connection lost after 20 consecutive poll failures; retrying with back-off
+09-18 16:47:53.318 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:48:02.056 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/viewers Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:48:02.058 E/HotMicCore(11188): Request failed: POST /presence Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:48:02.324 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:48:14.337 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:48:38.355 E/HotMicCore(11188): Request failed: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data Unable to resolve host "api.hotmic.io": No address associated with hostname
+09-18 16:49:03.177 I/HotMicCore(11188): Request finished: POST /presence status=200 ms=1119
+09-18 16:49:26.781 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=386
+09-18 16:49:27.183 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=389
+09-18 16:49:27.639 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=444
+09-18 16:49:28.025 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=378
+09-18 16:49:28.409 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=375
+09-18 16:49:28.807 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=391
+09-18 16:49:29.269 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=449
+09-18 16:49:29.674 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=395
+09-18 16:49:30.072 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=387
+09-18 16:49:30.454 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=372
+09-18 16:49:30.968 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=506
+09-18 16:49:31.360 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=385
+09-18 16:49:31.741 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=371
+09-18 16:49:32.143 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=391
+09-18 16:49:32.567 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=416
+09-18 16:49:33.029 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=451
+09-18 16:49:33.437 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=397
+09-18 16:49:33.824 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=378
+09-18 16:49:34.213 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=376
+09-18 16:49:34.618 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=393
+09-18 16:49:35.029 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=398
+09-18 16:49:35.403 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=363
+09-18 16:49:35.813 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=402
+09-18 16:49:36.207 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=383
+09-18 16:49:36.575 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=359
+09-18 16:49:36.958 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=374
+09-18 16:49:37.315 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=348
+09-18 16:49:37.700 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=376
+09-18 16:49:38.115 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=405
+09-18 16:49:38.511 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=387
+09-18 16:49:38.887 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=366
+09-18 16:49:39.295 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=401
+09-18 16:49:39.721 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=415
+09-18 16:49:40.105 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=373
+09-18 16:49:40.499 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=384
+09-18 16:49:40.894 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=384
+09-18 16:49:41.279 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=379
+09-18 16:49:41.795 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=505
+09-18 16:49:42.213 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=412
+09-18 16:49:42.589 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=367
+09-18 16:49:42.622 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=28
+09-18 16:49:42.655 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=26
+09-18 16:49:42.690 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=27
+09-18 16:49:42.723 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=28
+09-18 16:49:42.756 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=28
+09-18 16:49:42.789 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=26
+09-18 16:49:42.822 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=28
+09-18 16:49:42.855 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=28
+09-18 16:49:42.884 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=24
+09-18 16:49:42.916 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=27
+09-18 16:49:42.947 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=25
+09-18 16:49:42.975 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=23
+09-18 16:49:43.011 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=30
+09-18 16:49:43.042 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=25
+09-18 16:49:43.073 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=24
+09-18 16:49:43.105 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=27
+09-18 16:49:43.138 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=27
+09-18 16:49:43.171 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=28
+09-18 16:49:43.201 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=25
+09-18 16:49:43.237 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=29
+09-18 16:49:43.269 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=26
+09-18 16:49:44.447 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=29
+09-18 16:49:47.450 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=28
+09-18 16:49:50.458 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=33
+09-18 16:49:53.456 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=27
+09-18 16:49:56.466 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=32
+09-18 16:49:59.473 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=34
+09-18 16:50:02.115 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/viewers status=200 ms=62
+09-18 16:50:02.124 I/HotMicCore(11188): Request finished: POST /presence status=200 ms=64
+09-18 16:50:02.474 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=33
+09-18 16:50:05.475 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=32
+09-18 16:50:08.476 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=30
+09-18 16:50:11.483 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=32
+09-18 16:50:14.489 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=30
+09-18 16:50:17.490 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=28
+09-18 16:50:20.498 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=31
+09-18 16:50:23.501 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=31
+09-18 16:50:26.509 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=31
+09-18 16:50:29.870 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=389
+09-18 16:50:33.039 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=555
+09-18 16:50:35.925 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=435
+09-18 16:50:38.905 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=413
+09-18 16:50:42.038 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=543
+09-18 16:50:44.911 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=412
+09-18 16:50:47.900 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=399
+09-18 16:50:50.895 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=390
+09-18 16:50:53.895 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=388
+09-18 16:50:56.869 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=359
+09-18 16:50:59.909 I/HotMicCore(11188): Request finished: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data status=200 ms=396
+09-18 16:51:02.121 I/HotMicCore(11188): Request finished: POST /presence status=200 ms=57
+09-18 16:51:02.612 D/HotMicCore(11188): Request cancelled: GET /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/poll-data
+09-18 16:51:02.659 I/HotMicCore(11188): Request finished: POST /streams/71e76bb9-de2b-4bb9-ad8d-533b15b1387e/end_session/ status=200 ms=47

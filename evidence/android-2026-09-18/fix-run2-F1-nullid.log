@@ -1,0 +1,32 @@
+--------- beginning of main
+09-18 16:43:53.519 I/HEM96   (11035): AUTORUN start rows=HOLD
+09-18 16:43:53.530 I/HEM96   (11035): ROW HOLD begin
+09-18 16:43:54.862 I/HEM96   (11035): HOLD start_ms=1317 state=Active stream=LIVE user=BR Staging Test chats=20 polls=7 room=2
+09-18 16:43:54.863 I/HEM96   (11035): HOLD EVENT 2026-09-18T23:43:54.863Z StateChanged(Active)
+09-18 16:43:54.864 I/HEM96   (11035): HOLD EVENT 2026-09-18T23:43:54.863Z ConnectionChanged(Connected)
+09-18 16:43:58.291 I/HEM96   (11035): HOLD EVENT 2026-09-18T23:43:58.290Z StreamUpdated(state=LIVE viewers=2)
+09-18 16:43:58.293 I/HEM96   (11035): HOLD EVENT 2026-09-18T23:43:58.291Z PollUpdated(248f3162 closed=true responses=1 my=99fb675f)
+09-18 16:43:58.294 I/HEM96   (11035): HOLD EVENT 2026-09-18T23:43:58.294Z PollUpdated(5d98220b closed=false responses=1 my=aa69e2fe)
+09-18 16:43:58.295 I/HEM96   (11035): HOLD EVENT 2026-09-18T23:43:58.295Z PollUpdated(7e9b3c6d closed=false responses=1 my=53a2ea31)
+09-18 16:43:58.296 I/HEM96   (11035): HOLD EVENT 2026-09-18T23:43:58.296Z PollUpdated(a3c5650a closed=false responses=1 my=564354fa)
+09-18 16:44:04.870 I/HEM96   (11035): HOLD t=9s state=Active conn=Connected events=7 reconnecting=0 batches=0 chats=0 dup=0 streamUpdated=1 participants=0 polls=4 pss_kb=58082
+09-18 16:44:14.882 I/HEM96   (11035): HOLD t=20s state=Active conn=Connected events=7 reconnecting=0 batches=0 chats=0 dup=0 streamUpdated=1 participants=0 polls=4 pss_kb=58916
+09-18 16:44:24.892 I/HEM96   (11035): HOLD t=30s state=Active conn=Connected events=7 reconnecting=0 batches=0 chats=0 dup=0 streamUpdated=1 participants=0 polls=4 pss_kb=59788
+09-18 16:44:25.840 I/HEM96   (11035): HOLD CHAT id=6aadccd7ebd91e0f390d7b08 user=fff4c1ac created=2026-09-18T23:44:23Z received=2026-09-18T23:44:25.839Z dup=false text=HEM96 F1 android null-id probe (fixes)
+09-18 16:44:25.842 I/HEM96   (11035): HOLD EVENT 2026-09-18T23:44:25.841Z ChatBatchReceived(messages=1 reactions=0 ids=6aadccd7)
+09-18 16:44:34.902 I/HEM96   (11035): HOLD t=40s state=Active conn=Connected events=8 reconnecting=0 batches=1 chats=1 dup=0 streamUpdated=1 participants=0 polls=4 pss_kb=60988
+09-18 16:44:44.914 I/HEM96   (11035): HOLD t=50s state=Active conn=Connected events=8 reconnecting=0 batches=1 chats=1 dup=0 streamUpdated=1 participants=0 polls=4 pss_kb=60614
+09-18 16:44:46.339 I/HEM96   (11035): HOLD EVENT 2026-09-18T23:44:46.338Z StreamUpdated(state=LIVE viewers=1)
+09-18 16:44:54.925 I/HEM96   (11035): HOLD t=60s state=Active conn=Connected events=9 reconnecting=0 batches=1 chats=1 dup=0 streamUpdated=2 participants=0 polls=4 pss_kb=57370
+09-18 16:45:04.936 I/HEM96   (11035): HOLD t=70s state=Active conn=Connected events=9 reconnecting=0 batches=1 chats=1 dup=0 streamUpdated=2 participants=0 polls=4 pss_kb=58494
+09-18 16:45:14.950 I/HEM96   (11035): HOLD t=80s state=Active conn=Connected events=9 reconnecting=0 batches=1 chats=1 dup=0 streamUpdated=2 participants=0 polls=4 pss_kb=59389
+09-18 16:45:24.965 I/HEM96   (11035): HOLD t=90s state=Active conn=Connected events=9 reconnecting=0 batches=1 chats=1 dup=0 streamUpdated=2 participants=0 polls=4 pss_kb=60233
+09-18 16:45:34.975 I/HEM96   (11035): HOLD t=100s state=Active conn=Connected events=9 reconnecting=0 batches=1 chats=1 dup=0 streamUpdated=2 participants=0 polls=4 pss_kb=57637
+09-18 16:45:44.987 I/HEM96   (11035): HOLD t=110s state=Active conn=Connected events=9 reconnecting=0 batches=1 chats=1 dup=0 streamUpdated=2 participants=0 polls=4 pss_kb=58521
+09-18 16:45:54.836 I/HEM96   (11035): HOLD EVENT 2026-09-18T23:45:54.835Z ParticipantsUpdated(host=a533e186 cohosts=0 guests=0 waiting=0 room=[fff4c1ac])
+09-18 16:45:54.995 I/HEM96   (11035): HOLD t=120s state=Active conn=Connected events=10 reconnecting=0 batches=1 chats=1 dup=0 streamUpdated=2 participants=1 polls=4 pss_kb=59581
+09-18 16:45:54.996 I/HEM96   (11035): ROW HOLD PASS seconds=120 finalState=Active everDisconnected=false reconnectingEvents=0 chats=1 dup=0 sent=0 events=10
+09-18 16:45:54.997 I/HEM96   (11035): HOLD EVENT 2026-09-18T23:45:54.997Z StateChanged(Stopping)
+09-18 16:45:55.047 I/HEM96   (11035): HOLD EVENT 2026-09-18T23:45:55.047Z ConnectionChanged(Disconnected)
+09-18 16:45:55.049 I/HEM96   (11035): HOLD EVENT 2026-09-18T23:45:55.048Z StateChanged(Stopped)
+09-18 16:45:55.049 I/HEM96   (11035): AUTORUN COMPLETE

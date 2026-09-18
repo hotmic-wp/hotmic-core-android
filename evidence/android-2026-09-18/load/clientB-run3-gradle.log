@@ -1,0 +1,26 @@
+    LOAD [     0.3s] PREFLIGHT stream=71e76bb9 state=LIVE host=Chriss-MacBook-Pro-3.local jvm=17.0.20 os=Mac OS X 26.5.2
+    LOAD [     0.3s] CONFIG n=1 hold=200s ramp=5/s drain=10/s idle=5s chatting=1 chat_every=10s tokens=distinct(1) expected_rps=0.46 sdk=0.1.0-SNAPSHOT
+    LOAD [     0.3s] PHASE ramp
+    LOAD [     0.5s] SESSION 0 snapshot stream=LIVE user=HEM96_Android B chats=20 polls=7 room=1
+    LOAD [     0.6s] RAMP done started=1 failed=0
+    LOAD [     0.6s] PRESENCE[ramp_end] viewers_list=1 info_viewers=0 info_visitors=0 info_state=LIVE
+    LOAD [     0.6s] PHASE hold
+    LOAD [     5.3s] SAMPLE phase=hold active=1 reconnecting=0 failed=0 rps60=0.1/0.5 non2xx=0.0% poll_p95=357ms heap=38MB rss=131MB chat_sent=0 delivered=0 dup=0
+    LOAD [    35.4s] SAMPLE phase=hold active=1 reconnecting=0 failed=0 rps60=0.3/0.5 non2xx=0.0% poll_p95=608ms heap=15MB rss=64MB chat_sent=3 delivered=2 dup=0
+    LOAD [    65.5s] SAMPLE phase=hold active=1 reconnecting=0 failed=0 rps60=0.5/0.5 non2xx=0.0% poll_p95=496ms heap=21MB rss=59MB chat_sent=6 delivered=3 dup=1
+    LOAD [    85.1s] SESSION 0 chatMessageDeleted b832fb3c-c4ce-4394-b269-26d8ea2e719a
+    LOAD [    88.1s] SESSION 0 chatMessageDeleted b832fb3c-c4ce-4394-b269-26d8ea2e719a
+    LOAD [    95.6s] SAMPLE phase=hold active=1 reconnecting=0 failed=0 rps60=0.5/0.5 non2xx=0.0% poll_p95=447ms heap=25MB rss=50MB chat_sent=9 delivered=5 dup=1
+    LOAD [   101.1s] PRESENCE[hold_mid] viewers_list=2 info_viewers=0 info_visitors=0 info_state=LIVE
+    LOAD [   120.5s] SESSION 0 participantsUpdated room=[hem96-androi, fff4c1ac-22e]
+    LOAD [   125.7s] SAMPLE phase=hold active=1 reconnecting=0 failed=0 rps60=0.5/0.5 non2xx=0.0% poll_p95=447ms heap=29MB rss=76MB chat_sent=12 delivered=6 dup=3
+    LOAD [   155.7s] SAMPLE phase=hold active=1 reconnecting=0 failed=0 rps60=0.5/0.5 non2xx=0.0% poll_p95=425ms heap=33MB rss=66MB chat_sent=15 delivered=8 dup=3
+    LOAD [   185.8s] SAMPLE phase=hold active=1 reconnecting=0 failed=0 rps60=0.5/0.5 non2xx=0.0% poll_p95=441ms heap=37MB rss=69MB chat_sent=18 delivered=9 dup=5
+    LOAD [   201.5s] PRESENCE[hold_end] viewers_list=2 info_viewers=0 info_visitors=0 info_state=LIVE
+    LOAD [   201.5s] PHASE drain
+    LOAD [   201.7s] DRAIN done stopped=1
+    LOAD [   201.7s] PHASE idle
+    LOAD [   206.7s] IDLE done sdk_requests_during_idle=0
+    LOAD [   206.7s] PRESENCE[idle_end] viewers_list=2 info_viewers=0 info_visitors=0 info_state=LIVE
+    LOAD [   206.8s] DONE requests=95 statuses={200=95} stop_rule=none
+BUILD SUCCESSFUL in 3m 28s

@@ -1,0 +1,31 @@
+    LOAD [     0.5s] PREFLIGHT stream=71e76bb9 state=LIVE host=Chriss-MacBook-Pro-3.local jvm=17.0.20 os=Mac OS X 26.5.2
+    LOAD [     0.5s] CONFIG n=25 hold=300s ramp=5/s drain=10/s idle=120s chatting=25 chat_every=30s tokens=distinct(25) expected_rps=9.79 sdk=0.1.0-SNAPSHOT
+    LOAD [     0.5s] PHASE ramp
+    LOAD [     0.7s] SESSION 0 snapshot stream=LIVE user=HEM96_A load 01 chats=20 polls=7 room=1
+    LOAD [     5.5s] SAMPLE phase=ramp active=24 reconnecting=0 failed=0 rps60=1.8/9.8 non2xx=0.0% poll_p95=398ms heap=53MB rss=122MB chat_sent=0 delivered=0 dup=0
+    LOAD [     5.6s] RAMP done started=25 failed=0
+    LOAD [     5.6s] PRESENCE[ramp_end] viewers_list=1 info_viewers=0 info_visitors=0 info_state=LIVE
+    LOAD [     5.6s] PHASE hold
+    LOAD [    35.6s] SAMPLE phase=hold active=25 reconnecting=0 failed=0 rps60=6.4/9.8 non2xx=0.0% poll_p95=335ms heap=134MB rss=143MB chat_sent=24 delivered=512 dup=0
+    LOAD [    65.7s] SAMPLE phase=hold active=25 reconnecting=0 failed=0 rps60=9.6/9.8 non2xx=0.0% poll_p95=352ms heap=223MB rss=150MB chat_sent=49 delivered=1144 dup=0
+    LOAD [    95.9s] SAMPLE phase=hold active=25 reconnecting=0 failed=0 rps60=9.6/9.8 non2xx=0.0% poll_p95=371ms heap=94MB rss=100MB chat_sent=74 delivered=1744 dup=0
+    LOAD [   126.0s] SAMPLE phase=hold active=25 reconnecting=0 failed=0 rps60=10.0/9.8 non2xx=0.0% poll_p95=374ms heap=180MB rss=249MB chat_sent=100 delivered=2353 dup=63
+    LOAD [   156.1s] SAMPLE phase=hold active=25 reconnecting=0 failed=0 rps60=10.0/9.8 non2xx=0.0% poll_p95=364ms heap=50MB rss=274MB chat_sent=125 delivered=2950 dup=164
+    LOAD [   156.2s] PRESENCE[hold_mid] viewers_list=26 info_viewers=0 info_visitors=0 info_state=LIVE
+    LOAD [   186.2s] SAMPLE phase=hold active=25 reconnecting=0 failed=0 rps60=9.6/9.8 non2xx=0.0% poll_p95=356ms heap=140MB rss=141MB chat_sent=150 delivered=3550 dup=260
+    LOAD [   216.3s] SAMPLE phase=hold active=25 reconnecting=0 failed=0 rps60=9.6/9.8 non2xx=0.0% poll_p95=344ms heap=223MB rss=169MB chat_sent=175 delivered=4150 dup=404
+    LOAD [   246.4s] SAMPLE phase=hold active=25 reconnecting=0 failed=0 rps60=10.0/9.8 non2xx=0.0% poll_p95=321ms heap=17MB rss=144MB chat_sent=200 delivered=4750 dup=548
+    LOAD [   276.4s] SAMPLE phase=hold active=25 reconnecting=0 failed=0 rps60=10.0/9.8 non2xx=0.0% poll_p95=318ms heap=27MB rss=136MB chat_sent=225 delivered=5349 dup=647
+    LOAD [   305.9s] PRESENCE[hold_end] viewers_list=26 info_viewers=0 info_visitors=0 info_state=LIVE
+    LOAD [   305.9s] PHASE drain
+    LOAD [   306.5s] SAMPLE phase=drain active=18 reconnecting=0 failed=0 rps60=9.7/9.8 non2xx=0.0% poll_p95=247ms heap=37MB rss=130MB chat_sent=249 delivered=5928 dup=695
+    LOAD [   308.5s] DRAIN done stopped=25
+    LOAD [   308.5s] PHASE idle
+    LOAD [   336.6s] SAMPLE phase=idle active=0 reconnecting=0 failed=0 rps60=5.5/9.8 non2xx=0.6% poll_p95=240ms heap=42MB rss=48MB chat_sent=249 delivered=5945 dup=695
+    LOAD [   366.7s] SAMPLE phase=idle active=0 reconnecting=0 failed=0 rps60=0.4/9.8 non2xx=8.7% poll_p95=271ms heap=42MB rss=109MB chat_sent=249 delivered=5945 dup=695
+    LOAD [   396.8s] SAMPLE phase=idle active=0 reconnecting=0 failed=0 rps60=0.0/9.8 non2xx=0.0% poll_p95=0ms heap=42MB rss=31MB chat_sent=249 delivered=5945 dup=695
+    LOAD [   426.9s] SAMPLE phase=idle active=0 reconnecting=0 failed=0 rps60=0.0/9.8 non2xx=0.0% poll_p95=0ms heap=15MB rss=72MB chat_sent=249 delivered=5945 dup=695
+    LOAD [   428.5s] IDLE done sdk_requests_during_idle=0
+    LOAD [   428.6s] PRESENCE[idle_end] viewers_list=26 info_viewers=0 info_visitors=0 info_state=LIVE
+    LOAD [   428.6s] DONE requests=3069 statuses={200=3067, 0=2} stop_rule=none
+BUILD SUCCESSFUL in 7m 11s

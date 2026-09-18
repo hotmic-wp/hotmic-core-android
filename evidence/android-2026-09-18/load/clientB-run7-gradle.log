@@ -1,0 +1,22 @@
+    LOAD [     0.2s] PREFLIGHT stream=71e76bb9 state=LIVE host=Chriss-MacBook-Pro-3.local jvm=17.0.20 os=Mac OS X 26.5.2
+    LOAD [     0.2s] CONFIG n=1 hold=150s ramp=5/s drain=10/s idle=3s chatting=1 chat_every=10s tokens=distinct(1) expected_rps=0.46 sdk=0.1.0-SNAPSHOT
+    LOAD [     0.2s] PHASE ramp
+    LOAD [     0.4s] SESSION 0 snapshot stream=LIVE user=HEM96 Android B chats=20 polls=7 room=2
+    LOAD [     0.5s] RAMP done started=1 failed=0
+    LOAD [     0.5s] PRESENCE[ramp_end] viewers_list=2 info_viewers=0 info_visitors=0 info_state=LIVE
+    LOAD [     0.5s] PHASE hold
+    LOAD [     5.3s] SAMPLE phase=hold active=1 reconnecting=0 failed=0 rps60=0.1/0.5 non2xx=0.0% poll_p95=25ms heap=37MB rss=131MB chat_sent=0 delivered=0 dup=0
+    LOAD [    35.3s] SAMPLE phase=hold active=1 reconnecting=0 failed=0 rps60=0.3/0.5 non2xx=0.0% poll_p95=31ms heap=15MB rss=120MB chat_sent=3 delivered=0 dup=0
+    LOAD [    65.4s] SAMPLE phase=hold active=1 reconnecting=0 failed=0 rps60=0.5/0.5 non2xx=0.0% poll_p95=417ms heap=20MB rss=62MB chat_sent=6 delivered=0 dup=0
+    LOAD [    75.9s] PRESENCE[hold_mid] viewers_list=2 info_viewers=0 info_visitors=0 info_state=LIVE
+    LOAD [    95.5s] SAMPLE phase=hold active=1 reconnecting=0 failed=0 rps60=0.5/0.5 non2xx=0.0% poll_p95=425ms heap=24MB rss=85MB chat_sent=9 delivered=0 dup=0
+    LOAD [   120.4s] SESSION 0 participantsUpdated room=[hem96-androi]
+    LOAD [   125.6s] SAMPLE phase=hold active=1 reconnecting=0 failed=0 rps60=0.5/0.5 non2xx=0.0% poll_p95=444ms heap=29MB rss=81MB chat_sent=12 delivered=0 dup=0
+    LOAD [   151.2s] PRESENCE[hold_end] viewers_list=2 info_viewers=0 info_visitors=0 info_state=LIVE
+    LOAD [   151.2s] PHASE drain
+    LOAD [   151.3s] DRAIN done stopped=1
+    LOAD [   151.3s] PHASE idle
+    LOAD [   154.4s] IDLE done sdk_requests_during_idle=0
+    LOAD [   154.4s] PRESENCE[idle_end] viewers_list=2 info_viewers=0 info_visitors=0 info_state=LIVE
+    LOAD [   154.4s] DONE requests=73 statuses={200=73} stop_rule=none
+BUILD SUCCESSFUL in 2m 35s

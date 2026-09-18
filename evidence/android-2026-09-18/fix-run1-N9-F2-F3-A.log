@@ -1,0 +1,76 @@
+--------- beginning of main
+09-18 16:40:31.254 I/HEM96   (10794): AUTORUN start rows=HOLD
+09-18 16:40:31.265 I/HEM96   (10794): ROW HOLD begin
+09-18 16:40:31.700 I/HEM96   (10794): HOLD start_ms=421 state=Active stream=LIVE user=BR Staging Test chats=20 polls=7 room=0
+09-18 16:40:31.702 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:40:31.701Z StateChanged(Active)
+09-18 16:40:31.703 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:40:31.703Z ConnectionChanged(Connected)
+09-18 16:40:35.183 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:40:35.181Z PollUpdated(248f3162 closed=true responses=1 my=99fb675f)
+09-18 16:40:35.185 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:40:35.184Z PollUpdated(5d98220b closed=false responses=1 my=aa69e2fe)
+09-18 16:40:35.186 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:40:35.185Z PollUpdated(7e9b3c6d closed=false responses=1 my=53a2ea31)
+09-18 16:40:35.187 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:40:35.187Z PollUpdated(a3c5650a closed=false responses=1 my=564354fa)
+09-18 16:40:41.716 I/HEM96   (10794): HOLD t=10s state=Active conn=Connected events=6 reconnecting=0 batches=0 chats=0 dup=0 streamUpdated=0 participants=0 polls=4 pss_kb=58279
+09-18 16:40:51.730 I/HEM96   (10794): HOLD t=20s state=Active conn=Connected events=6 reconnecting=0 batches=0 chats=0 dup=0 streamUpdated=0 participants=0 polls=4 pss_kb=59009
+09-18 16:40:51.834 I/HEM96   (10794): HOLD SENT id=c1a51842-f002-46a5-b7a0-fdb0518783e0 n=1 created=2026-09-18T23:40:51.732Z
+09-18 16:40:53.644 I/HEM96   (10794): HOLD CHAT id=f1263668-aa7e-4214-a712-477bad15a778 user=hem96-an created=2026-09-18T23:40:51Z received=2026-09-18T23:40:53.643Z dup=false text=LclientB-fixrun1 s0 n1 2026-09-18T23:40:
+09-18 16:40:53.645 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:40:53.645Z ChatBatchReceived(messages=1 reactions=0 ids=f1263668)
+09-18 16:40:59.126 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:40:59.125Z StreamUpdated(state=LIVE viewers=2)
+09-18 16:41:01.848 I/HEM96   (10794): HOLD t=30s state=Active conn=Connected events=8 reconnecting=0 batches=1 chats=1 dup=0 streamUpdated=1 participants=0 polls=4 pss_kb=60041
+09-18 16:41:02.667 I/HEM96   (10794): HOLD CHAT id=e5a87d45-977f-4dbd-a10d-51145e138c1d user=hem96-an created=2026-09-18T23:41:01Z received=2026-09-18T23:41:02.666Z dup=false text=LclientB-fixrun1 s0 n2 2026-09-18T23:41:
+09-18 16:41:02.669 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:41:02.668Z ChatBatchReceived(messages=1 reactions=0 ids=e5a87d45)
+09-18 16:41:11.858 I/HEM96   (10794): HOLD t=40s state=Active conn=Connected events=9 reconnecting=0 batches=2 chats=2 dup=0 streamUpdated=1 participants=0 polls=4 pss_kb=61105
+09-18 16:41:11.934 I/HEM96   (10794): HOLD SENT id=46370abb-9735-429a-b9bd-0890db53f1a6 n=2 created=2026-09-18T23:41:11.859Z
+09-18 16:41:14.706 I/HEM96   (10794): HOLD CHAT id=9bb6a967-4b5d-46ec-a7fe-8058660ebdd8 user=hem96-an created=2026-09-18T23:41:11Z received=2026-09-18T23:41:14.705Z dup=false text=LclientB-fixrun1 s0 n3 2026-09-18T23:41:
+09-18 16:41:14.707 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:41:14.706Z ChatBatchReceived(messages=1 reactions=0 ids=9bb6a967)
+09-18 16:41:21.949 I/HEM96   (10794): HOLD t=50s state=Active conn=Connected events=10 reconnecting=0 batches=3 chats=3 dup=0 streamUpdated=1 participants=0 polls=4 pss_kb=59942
+09-18 16:41:23.744 I/HEM96   (10794): HOLD CHAT id=e04c7eed-97eb-4f7b-a9c9-f6e2e6a4503c user=hem96-an created=2026-09-18T23:41:21Z received=2026-09-18T23:41:23.743Z dup=false text=LclientB-fixrun1 s0 n4 2026-09-18T23:41:
+09-18 16:41:23.745 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:41:23.745Z ChatBatchReceived(messages=1 reactions=0 ids=e04c7eed)
+09-18 16:41:31.957 I/HEM96   (10794): HOLD t=60s state=Active conn=Connected events=11 reconnecting=0 batches=4 chats=4 dup=0 streamUpdated=1 participants=0 polls=4 pss_kb=56274
+09-18 16:41:32.031 I/HEM96   (10794): HOLD SENT id=1b73f81d-33a2-44a0-bc51-992021061aef n=3 created=2026-09-18T23:41:31.958Z
+09-18 16:41:35.776 I/HEM96   (10794): HOLD CHAT id=cb5e1645-075f-4d90-af51-c2a37f7582c6 user=hem96-an created=2026-09-18T23:41:31Z received=2026-09-18T23:41:35.775Z dup=false text=LclientB-fixrun1 s0 n5 2026-09-18T23:41:
+09-18 16:41:35.777 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:41:35.776Z ChatBatchReceived(messages=1 reactions=0 ids=cb5e1645)
+09-18 16:41:42.040 I/HEM96   (10794): HOLD t=70s state=Active conn=Connected events=12 reconnecting=0 batches=5 chats=5 dup=0 streamUpdated=1 participants=0 polls=4 pss_kb=57518
+09-18 16:41:44.792 I/HEM96   (10794): HOLD CHAT id=7d670d17-0547-4e45-a495-eadc096ae2eb user=hem96-an created=2026-09-18T23:41:41Z received=2026-09-18T23:41:44.792Z dup=false text=LclientB-fixrun1 s0 n6 2026-09-18T23:41:
+09-18 16:41:44.794 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:41:44.793Z ChatBatchReceived(messages=1 reactions=0 ids=7d670d17)
+09-18 16:41:50.173 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:41:50.172Z ChatMessageDeleted(c1a51842)
+09-18 16:41:52.054 I/HEM96   (10794): HOLD t=80s state=Active conn=Connected events=14 reconnecting=0 batches=6 chats=6 dup=0 streamUpdated=1 participants=0 polls=4 pss_kb=58385
+09-18 16:41:52.131 I/HEM96   (10794): HOLD SENT id=28788c2d-3fd7-4402-84c2-3f4a7725d6d6 n=4 created=2026-09-18T23:41:52.055Z
+09-18 16:41:53.818 I/HEM96   (10794): HOLD CHAT id=de971f22-bb23-4182-b9a0-7551d78f4d01 user=hem96-an created=2026-09-18T23:41:51Z received=2026-09-18T23:41:53.817Z dup=false text=LclientB-fixrun1 s0 n7 2026-09-18T23:41:
+09-18 16:41:53.821 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:41:53.819Z ChatBatchReceived(messages=1 reactions=0 ids=de971f22)
+09-18 16:42:02.145 I/HEM96   (10794): HOLD t=90s state=Active conn=Connected events=15 reconnecting=0 batches=7 chats=7 dup=0 streamUpdated=1 participants=0 polls=4 pss_kb=60613
+09-18 16:42:05.849 I/HEM96   (10794): HOLD CHAT id=31fcbbe8-9755-4f9f-a60e-7605d4d3a255 user=hem96-an created=2026-09-18T23:42:02Z received=2026-09-18T23:42:05.848Z dup=false text=LclientB-fixrun1 s0 n8 2026-09-18T23:42:
+09-18 16:42:05.850 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:42:05.849Z ChatBatchReceived(messages=1 reactions=0 ids=31fcbbe8)
+09-18 16:42:12.157 I/HEM96   (10794): HOLD t=100s state=Active conn=Connected events=16 reconnecting=0 batches=8 chats=8 dup=0 streamUpdated=1 participants=0 polls=4 pss_kb=61637
+09-18 16:42:12.232 I/HEM96   (10794): HOLD SENT id=706a2438-2c92-492d-a6e5-e91e39fc096e n=5 created=2026-09-18T23:42:12.158Z
+09-18 16:42:14.875 I/HEM96   (10794): HOLD CHAT id=606c58de-ace1-464d-a03b-cce9e94d6a3e user=hem96-an created=2026-09-18T23:42:12Z received=2026-09-18T23:42:14.874Z dup=false text=LclientB-fixrun1 s0 n9 2026-09-18T23:42:
+09-18 16:42:14.877 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:42:14.876Z ChatBatchReceived(messages=1 reactions=0 ids=606c58de)
+09-18 16:42:22.247 I/HEM96   (10794): HOLD t=110s state=Active conn=Connected events=17 reconnecting=0 batches=9 chats=9 dup=0 streamUpdated=1 participants=0 polls=4 pss_kb=58013
+09-18 16:42:23.908 I/HEM96   (10794): HOLD CHAT id=1ee02243-5061-43d3-8428-a6e7f5b55dca user=hem96-an created=2026-09-18T23:42:22Z received=2026-09-18T23:42:23.908Z dup=false text=LclientB-fixrun1 s0 n10 2026-09-18T23:42
+09-18 16:42:23.910 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:42:23.909Z ChatBatchReceived(messages=1 reactions=0 ids=1ee02243)
+09-18 16:42:31.653 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:42:31.651Z ParticipantsUpdated(host=a533e186 cohosts=0 guests=0 waiting=0 room=[hem96-an, fff4c1ac])
+09-18 16:42:32.260 I/HEM96   (10794): HOLD t=120s state=Active conn=Connected events=19 reconnecting=0 batches=10 chats=10 dup=0 streamUpdated=1 participants=1 polls=4 pss_kb=59169
+09-18 16:42:32.341 I/HEM96   (10794): HOLD SENT id=512c2c5f-1211-416c-8f12-d17ce6ff3224 n=6 created=2026-09-18T23:42:32.262Z
+09-18 16:42:35.946 I/HEM96   (10794): HOLD CHAT id=55997144-c2cd-4874-8643-e4e52ea4e945 user=hem96-an created=2026-09-18T23:42:32Z received=2026-09-18T23:42:35.944Z dup=false text=LclientB-fixrun1 s0 n11 2026-09-18T23:42
+09-18 16:42:35.948 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:42:35.947Z ChatBatchReceived(messages=1 reactions=0 ids=55997144)
+09-18 16:42:42.352 I/HEM96   (10794): HOLD t=130s state=Active conn=Connected events=20 reconnecting=0 batches=11 chats=11 dup=0 streamUpdated=1 participants=1 polls=4 pss_kb=60041
+09-18 16:42:44.981 I/HEM96   (10794): HOLD CHAT id=5d1d3176-cb16-4f03-a122-94f4de942ca2 user=hem96-an created=2026-09-18T23:42:42Z received=2026-09-18T23:42:44.980Z dup=false text=LclientB-fixrun1 s0 n12 2026-09-18T23:42
+09-18 16:42:44.984 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:42:44.983Z ChatBatchReceived(messages=1 reactions=0 ids=5d1d3176)
+09-18 16:42:52.365 I/HEM96   (10794): HOLD t=140s state=Active conn=Connected events=21 reconnecting=0 batches=12 chats=12 dup=0 streamUpdated=1 participants=1 polls=4 pss_kb=60845
+09-18 16:42:52.443 I/HEM96   (10794): HOLD SENT id=85abc6f7-e4c3-4d57-a68b-fff65ee7b128 n=7 created=2026-09-18T23:42:52.366Z
+09-18 16:42:53.998 I/HEM96   (10794): HOLD CHAT id=8f3320f5-d789-4580-afee-b3c5efc3dbd5 user=hem96-an created=2026-09-18T23:42:52Z received=2026-09-18T23:42:53.997Z dup=false text=LclientB-fixrun1 s0 n13 2026-09-18T23:42
+09-18 16:42:53.999 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:42:53.999Z ChatBatchReceived(messages=1 reactions=0 ids=8f3320f5)
+09-18 16:43:02.453 I/HEM96   (10794): HOLD t=150s state=Active conn=Connected events=22 reconnecting=0 batches=13 chats=13 dup=0 streamUpdated=1 participants=1 polls=4 pss_kb=57869
+09-18 16:43:06.029 I/HEM96   (10794): HOLD CHAT id=c1061c33-48c4-48a4-9650-425ef1d8f6d3 user=hem96-an created=2026-09-18T23:43:02Z received=2026-09-18T23:43:06.028Z dup=false text=LclientB-fixrun1 s0 n14 2026-09-18T23:43
+09-18 16:43:06.030 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:43:06.029Z ChatBatchReceived(messages=1 reactions=0 ids=c1061c33)
+09-18 16:43:12.466 I/HEM96   (10794): HOLD t=160s state=Active conn=Connected events=23 reconnecting=0 batches=14 chats=14 dup=0 streamUpdated=1 participants=1 polls=4 pss_kb=58724
+09-18 16:43:12.540 I/HEM96   (10794): HOLD SENT id=fcb8c322-e834-4de9-aefc-98501d74b644 n=8 created=2026-09-18T23:43:12.467Z
+09-18 16:43:22.549 I/HEM96   (10794): HOLD t=170s state=Active conn=Connected events=23 reconnecting=0 batches=14 chats=14 dup=0 streamUpdated=1 participants=1 polls=4 pss_kb=59600
+09-18 16:43:32.561 I/HEM96   (10794): HOLD t=180s state=Active conn=Connected events=23 reconnecting=0 batches=14 chats=14 dup=0 streamUpdated=1 participants=1 polls=4 pss_kb=60488
+09-18 16:43:32.634 I/HEM96   (10794): HOLD SENT id=6aed4a96-8c5d-4040-9341-e7956724ecd2 n=9 created=2026-09-18T23:43:32.562Z
+09-18 16:43:42.647 I/HEM96   (10794): HOLD t=190s state=Active conn=Connected events=23 reconnecting=0 batches=14 chats=14 dup=0 streamUpdated=1 participants=1 polls=4 pss_kb=61324
+09-18 16:43:52.660 I/HEM96   (10794): HOLD t=200s state=Active conn=Connected events=23 reconnecting=0 batches=14 chats=14 dup=0 streamUpdated=1 participants=1 polls=4 pss_kb=57312
+09-18 16:43:52.738 I/HEM96   (10794): HOLD SENT id=0bf87597-5c35-4534-9593-97c942385c75 n=10 created=2026-09-18T23:43:52.661Z
+09-18 16:43:52.739 I/HEM96   (10794): ROW HOLD PASS seconds=200 finalState=Active everDisconnected=false reconnectingEvents=0 chats=14 dup=0 sent=10 events=23
+09-18 16:43:52.740 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:43:52.740Z StateChanged(Stopping)
+09-18 16:43:52.789 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:43:52.789Z ConnectionChanged(Disconnected)
+09-18 16:43:52.790 I/HEM96   (10794): HOLD EVENT 2026-09-18T23:43:52.790Z StateChanged(Stopped)
+09-18 16:43:52.791 I/HEM96   (10794): AUTORUN COMPLETE

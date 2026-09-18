@@ -1,0 +1,19 @@
+    LOAD [     0.3s] PREFLIGHT stream=71e76bb9 state=LIVE host=Chriss-MacBook-Pro-3.local jvm=17.0.20 os=Mac OS X 26.5.2
+    LOAD [     0.3s] CONFIG n=1 hold=90s ramp=5/s drain=10/s idle=3s chatting=1 chat_every=5s tokens=distinct(1) expected_rps=0.56 sdk=0.1.0-SNAPSHOT
+    LOAD [     0.3s] PHASE ramp
+    LOAD [     0.4s] SESSION 0 snapshot stream=LIVE user=HEM96 Android B chats=20 polls=7 room=1
+    LOAD [     0.5s] RAMP done started=1 failed=0
+    LOAD [     0.5s] PRESENCE[ramp_end] viewers_list=1 info_viewers=0 info_visitors=0 info_state=LIVE
+    LOAD [     0.5s] PHASE hold
+    LOAD [     5.3s] SAMPLE phase=hold active=1 reconnecting=0 failed=0 rps60=0.1/0.6 non2xx=0.0% poll_p95=437ms heap=37MB rss=106MB chat_sent=0 delivered=0 dup=0
+    LOAD [    35.4s] SAMPLE phase=hold active=1 reconnecting=0 failed=0 rps60=0.4/0.6 non2xx=0.0% poll_p95=437ms heap=14MB rss=123MB chat_sent=6 delivered=0 dup=0
+    LOAD [    45.7s] PRESENCE[hold_mid] viewers_list=2 info_viewers=0 info_visitors=0 info_state=LIVE
+    LOAD [    65.5s] SAMPLE phase=hold active=1 reconnecting=0 failed=0 rps60=0.6/0.6 non2xx=0.0% poll_p95=429ms heap=21MB rss=82MB chat_sent=12 delivered=0 dup=0
+    LOAD [    91.0s] PRESENCE[hold_end] viewers_list=2 info_viewers=0 info_visitors=0 info_state=LIVE
+    LOAD [    91.0s] PHASE drain
+    LOAD [    91.1s] DRAIN done stopped=1
+    LOAD [    91.1s] PHASE idle
+    LOAD [    94.1s] IDLE done sdk_requests_during_idle=0
+    LOAD [    94.1s] PRESENCE[idle_end] viewers_list=2 info_viewers=0 info_visitors=0 info_state=LIVE
+    LOAD [    94.1s] DONE requests=53 statuses={200=53} stop_rule=none
+BUILD SUCCESSFUL in 1m 35s

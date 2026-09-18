@@ -1,0 +1,115 @@
+--------- beginning of main
+09-18 15:18:18.683 I/HEM96   ( 5693): AUTORUN start rows=N8,N10,N15,N17,N21,N24
+09-18 15:18:18.695 I/HEM96   ( 5693): ROW N8 begin
+09-18 15:18:19.458 I/HEM96   ( 5693): N8 start_ms=746 state=Active stream=LIVE user=BR Staging Test chats=20 polls=7 room=1
+09-18 15:18:19.569 I/HEM96   ( 5693): N8 send → ok id=2940926e user=fff4c1ac name=BR Staging Test created=2026-09-18T22:18:19.461Z device=6f23eb81
+09-18 15:18:19.635 I/HEM96   ( 5693): N8 send-empty → ok d288fb14
+09-18 15:18:19.694 I/HEM96   ( 5693): N8 send-spaces → Server(400, null)
+09-18 15:18:19.798 I/HEM96   ( 5693): N8 send-emoji → ok fb18866d
+09-18 15:18:19.878 I/HEM96   ( 5693): N8 send-2000 → ok 102fa9ba
+09-18 15:18:19.945 I/HEM96   ( 5693): N8 send-10000 → ok fecec372
+09-18 15:18:19.998 I/HEM96   ( 5693): N8 add-like → ok like
+09-18 15:18:20.053 I/HEM96   ( 5693): N8 add-fire → ok fire
+09-18 15:18:20.110 I/HEM96   ( 5693): N8 add-laugh → ok laugh
+09-18 15:18:20.160 I/HEM96   ( 5693): N8 add-anger → ok anger
+09-18 15:18:20.211 I/HEM96   ( 5693): N8 add-sadness → ok sadness
+09-18 15:18:20.264 I/HEM96   ( 5693): N8 add-like-twice → ok like
+09-18 15:18:20.328 I/HEM96   ( 5693): N8 fetch-reactions → ok like:fff4c1ac, like:fff4c1ac, fire:fff4c1ac, laugh:fff4c1ac, anger:fff4c1ac, sadness:fff4c1ac
+09-18 15:18:20.380 I/HEM96   ( 5693): N8 remove-like → ok like
+09-18 15:18:20.448 I/HEM96   ( 5693): N8 remove-like-twice → ok like
+09-18 15:18:20.500 I/HEM96   ( 5693): N8 add-bogus-chat-id → ok like
+09-18 15:18:20.559 I/HEM96   ( 5693): N8 add-type-banana → ok banana
+09-18 15:18:24.284 I/HEM96   ( 5693): N8 report-own → ok reported
+09-18 15:18:24.339 I/HEM96   ( 5693): N8 report-bogus → Server(400, null)
+09-18 15:18:26.771 I/HEM96   ( 5693): N8 report-other E21869CD → ok reported
+09-18 15:18:26.827 I/HEM96   ( 5693): N8 react-other → ok fire
+09-18 15:18:26.876 I/HEM96   ( 5693): N8 unreact-other → ok fire
+09-18 15:18:26.932 I/HEM96   ( 5693): N8 delete-own → ok deleted
+09-18 15:18:26.988 I/HEM96   ( 5693): N8 delete-own-twice → ok deleted
+09-18 15:18:34.989 I/HEM96   ( 5693): N8 own message echoed via events=false ownDeleteEvent=0 reactionDeletedEvents=0 batches=0
+09-18 15:18:35.041 I/HEM96   ( 5693): ROW N8 INFO see lines above
+09-18 15:18:35.041 I/HEM96   ( 5693): ROW N10 begin
+09-18 15:18:35.043 I/HEM96   ( 5693): N10 EVENT 2026-09-18T22:18:35.043Z StateChanged(Starting)
+09-18 15:18:36.728 I/HEM96   ( 5693): N10 start_ms=1686 state=Active stream=LIVE user=BR Staging Test chats=20 polls=7 room=1
+09-18 15:18:36.728 I/HEM96   ( 5693): N10 poll id=a3c5650a q=poll question 1 closed=false my=fc78cc32 responses=1 logo=true sponsor=false correct=0 options=[answer 1(1,pts=0,pics=0), answer 2(0,pts=0,pics=0)]
+09-18 15:18:36.729 I/HEM96   ( 5693): N10 poll id=7e9b3c6d q=who is the best ever? closed=false my=53a2ea31 responses=1 logo=true sponsor=false correct=0 options=[Bob(0,pts=0,pics=0), ana(0,pts=0,pics=0), john(1,pts=0,pics=0), mary(0,pts=0,pics=0)]
+09-18 15:18:36.729 I/HEM96   ( 5693): N10 poll id=5d98220b q=what is your favorite number? closed=false my=aa69e2fe responses=1 logo=true sponsor=false correct=0 options=[1(0,pts=0,pics=0), 2(0,pts=0,pics=0), 3(1,pts=0,pics=0)]
+09-18 15:18:36.729 I/HEM96   ( 5693): N10 poll id=e6df5069 q=Best taco flavor? closed=false my=null responses=0 logo=true sponsor=false correct=0 options=[Chicken(0,pts=0,pics=0), Beef(0,pts=0,pics=0), Steak(0,pts=0,pics=0), Al Pastor(0,pts=0,pics=0)]
+09-18 15:18:36.730 I/HEM96   ( 5693): N10 poll id=d6bf3c2e q=would you skydive? closed=false my=null responses=0 logo=true sponsor=false correct=0 options=[yes(0,pts=0,pics=0), no(0,pts=0,pics=0)]
+09-18 15:18:36.730 I/HEM96   ( 5693): N10 poll id=248f3162 q=HEM96 poll edited closed=true my=null responses=0 logo=true sponsor=false correct=0 options=[Alpha(0,pts=0,pics=0), Beta(0,pts=0,pics=0)]
+09-18 15:18:36.730 I/HEM96   ( 5693): N10 poll id=59a9f836 q=HEM96 delete me closed=false my=null responses=0 logo=true sponsor=false correct=0 options=[One(0,pts=0,pics=0), Two(0,pts=0,pics=0)]
+09-18 15:18:36.732 I/HEM96   ( 5693): N10 EVENT 2026-09-18T22:18:36.731Z StateChanged(Active)
+09-18 15:18:36.733 I/HEM96   ( 5693): N10 EVENT 2026-09-18T22:18:36.733Z ConnectionChanged(Connected)
+09-18 15:18:36.780 I/HEM96   ( 5693): N10 EVENT 2026-09-18T22:18:36.780Z PollUpdated(a3c5650a closed=false responses=1 my=564354fa)
+09-18 15:18:36.781 I/HEM96   ( 5693): N10 submit first option → ok
+09-18 15:18:36.841 I/HEM96   ( 5693): N10 EVENT 2026-09-18T22:18:36.840Z PollUpdated(a3c5650a closed=false responses=1 my=fc78cc32)
+09-18 15:18:36.841 I/HEM96   ( 5693): N10 submit second option (change) → ok
+09-18 15:18:36.890 I/HEM96   ( 5693): N10 EVENT 2026-09-18T22:18:36.890Z PollUpdated(a3c5650a closed=false responses=1 my=bogus-op)
+09-18 15:18:36.891 I/HEM96   ( 5693): N10 submit bogus option → ok
+09-18 15:18:36.944 I/HEM96   ( 5693): N10 EVENT 2026-09-18T22:18:36.944Z PollUpdated(248f3162 closed=true responses=0 my=99fb675f)
+09-18 15:18:36.945 I/HEM96   ( 5693): N10 submit on closed poll → ok
+09-18 15:18:36.994 I/HEM96   ( 5693): N10 submit bogus poll → ok
+09-18 15:18:40.133 I/HEM96   ( 5693): N10 EVENT 2026-09-18T22:18:40.132Z StreamUpdated(state=LIVE viewers=1)
+09-18 15:18:40.133 I/HEM96   ( 5693): N10 EVENT 2026-09-18T22:18:40.133Z PollUpdated(5d98220b closed=false responses=1 my=aa69e2fe)
+09-18 15:18:40.135 I/HEM96   ( 5693): N10 EVENT 2026-09-18T22:18:40.134Z PollUpdated(7e9b3c6d closed=false responses=1 my=53a2ea31)
+09-18 15:18:40.135 I/HEM96   ( 5693): N10 EVENT 2026-09-18T22:18:40.135Z PollUpdated(a3c5650a closed=false responses=1 my=bogus-op)
+09-18 15:18:43.141 I/HEM96   ( 5693): N10 EVENT 2026-09-18T22:18:43.140Z PollUpdated(248f3162 closed=true responses=1 my=99fb675f)
+09-18 15:18:44.999 I/HEM96   ( 5693): N10 events pollCreated=0 pollUpdated=8 pollDeleted=0
+09-18 15:18:45.001 I/HEM96   ( 5693): N10 EVENT 2026-09-18T22:18:45.000Z StateChanged(Stopping)
+09-18 15:18:45.053 I/HEM96   ( 5693): N10 EVENT 2026-09-18T22:18:45.052Z ConnectionChanged(Disconnected)
+09-18 15:18:45.054 I/HEM96   ( 5693): N10 EVENT 2026-09-18T22:18:45.053Z StateChanged(Stopped)
+09-18 15:18:45.054 I/HEM96   ( 5693): ROW N10 INFO see lines above
+09-18 15:18:45.055 I/HEM96   ( 5693): ROW N15 begin
+09-18 15:18:46.115 I/HEM96   ( 5693): N15 wrong-key fetchStreams → Server(500, App not found)
+09-18 15:18:46.170 I/HEM96   ( 5693): N15 wrong-key fetchStream → Server(500, App not found)
+09-18 15:18:46.221 I/HEM96   ( 5693): N15 wrong-key fetchUser → Server(500, App not found)
+09-18 15:18:46.273 I/HEM96   ( 5693): N15 wrong-key session.start → Server(500, App not found)
+09-18 15:18:47.330 I/HEM96   ( 5693): N15 empty-key fetchStreams → Server(400, Missing ApiKey header)
+09-18 15:18:47.382 I/HEM96   ( 5693): N15 empty-key fetchStream → Server(400, Missing ApiKey header)
+09-18 15:18:47.427 I/HEM96   ( 5693): N15 empty-key fetchUser → Server(400, Missing ApiKey header)
+09-18 15:18:47.479 I/HEM96   ( 5693): N15 empty-key session.start → Server(400, Missing ApiKey header)
+09-18 15:18:48.535 I/HEM96   ( 5693): N15 expired-jwt fetchStreams → Unauthorized
+09-18 15:18:48.573 I/HEM96   ( 5693): N15 expired-jwt fetchStream → ok LIVE
+09-18 15:18:48.628 I/HEM96   ( 5693): N15 expired-jwt fetchUser → ok BR Staging Test
+09-18 15:18:48.796 I/HEM96   ( 5693): N15 expired-jwt chat → Unauthorized
+09-18 15:18:48.849 I/HEM96   ( 5693): N15 expired-jwt session.start → ok user=anon_6f2/Guest539 restr=view_and_polls_only state=Active
+09-18 15:18:49.908 I/HEM96   ( 5693): N15 malformed-jwt fetchStreams → Unauthorized
+09-18 15:18:49.937 I/HEM96   ( 5693): N15 malformed-jwt fetchStream → ok LIVE
+09-18 15:18:49.991 I/HEM96   ( 5693): N15 malformed-jwt fetchUser → ok BR Staging Test
+09-18 15:18:50.158 I/HEM96   ( 5693): N15 malformed-jwt chat → Unauthorized
+09-18 15:18:50.211 I/HEM96   ( 5693): N15 malformed-jwt session.start → ok user=anon_6f2/Guest70677 restr=view_and_polls_only state=Active
+09-18 15:18:51.262 I/HEM96   ( 5693): N15 empty-jwt fetchStreams → Unauthorized
+09-18 15:18:51.313 I/HEM96   ( 5693): N15 empty-jwt fetchStream → ok LIVE
+09-18 15:18:51.362 I/HEM96   ( 5693): N15 empty-jwt fetchUser → ok BR Staging Test
+09-18 15:18:51.505 I/HEM96   ( 5693): N15 empty-jwt chat → Unauthorized
+09-18 15:18:51.555 I/HEM96   ( 5693): N15 empty-jwt session.start → ok user=anon_6f2/Guest77681 restr=view_and_polls_only state=Active
+09-18 15:18:52.607 I/HEM96   ( 5693): N15 wrong-secret-jwt fetchStreams → Unauthorized
+09-18 15:18:52.628 I/HEM96   ( 5693): N15 wrong-secret-jwt fetchStream → ok LIVE
+09-18 15:18:52.678 I/HEM96   ( 5693): N15 wrong-secret-jwt fetchUser → ok BR Staging Test
+09-18 15:18:52.847 I/HEM96   ( 5693): N15 wrong-secret-jwt chat → Unauthorized
+09-18 15:18:52.895 I/HEM96   ( 5693): N15 wrong-secret-jwt session.start → ok user=anon_6f2/Guest78251 restr=view_and_polls_only state=Active
+09-18 15:18:52.895 I/HEM96   ( 5693): ROW N15 INFO see lines above (no crash)
+09-18 15:18:52.896 I/HEM96   ( 5693): ROW N17 begin
+09-18 15:18:54.388 I/HEM96   ( 5693): N17 cancelled start → Cancelled
+09-18 15:19:05.526 I/HEM96   ( 5693): N17 start-after-stop=InvalidSessionState
+09-18 15:19:05.527 I/HEM96   ( 5693): N17 stop-twice=ok state=Stopped
+09-18 15:19:05.527 I/HEM96   ( 5693): N17 concurrent-start=ok/InvalidSessionState state=Active
+09-18 15:19:05.528 I/HEM96   ( 5693): N17 stop-during-starting: start=Cancelled state=Stopped
+09-18 15:19:05.528 I/HEM96   ( 5693): N17 cancel-start-job: state=Failed(Cancelled)
+09-18 15:19:05.528 I/HEM96   ( 5693): N17 release-without-stop: collected=false (polling coroutines hold the controller; see notes)
+09-18 15:19:05.528 I/HEM96   ( 5693): ROW N17 INFO see lines above
+09-18 15:19:05.529 I/HEM96   ( 5693): ROW N21 begin
+09-18 15:19:13.169 I/HEM96   ( 5693): ROW N21 PASS user=BR Staging Test listenerEvents=11 kinds=[StateChanged, ConnectionChanged, StreamUpdated, PollUpdated] listenerAfterStop=true
+09-18 15:19:13.170 I/HEM96   ( 5693): ROW N24 begin
+09-18 15:19:13.987 I/HEM96   ( 5693): N24 start_ms=815 state=Active stream=LIVE user=BR Staging Test chats=20 polls=7 room=1
+09-18 15:19:24.151 I/HEM96   ( 5693): N24 HotMicChatMessage populated=[badge, createdAt, deviceId, id, message, profilePic, streamId, userId, userName] never=[admin, angerCount, broadcaster, fireCount, laughCount, likeCount, sadnessCount, userReactions, userTags, verified]
+09-18 15:19:24.153 I/HEM96   ( 5693): N24 HotMicParticipant populated=[id, name, profilePic] never=[badge]
+09-18 15:19:24.153 I/HEM96   ( 5693): N24 HotMicParticipant$Snapshot populated=[host, room] never=[cohosts, guests, waiting]
+09-18 15:19:24.153 I/HEM96   ( 5693): N24 HotMicPoll populated=[closed, createdAt, id, logo, myAnswer, options, question, responses] never=[correctAnswers, sponsorUrl]
+09-18 15:19:24.154 I/HEM96   ( 5693): N24 HotMicPoll$Option populated=[answer, id, responses] never=[points, profilePics]
+09-18 15:19:24.154 I/HEM96   ( 5693): N24 HotMicStream populated=[endThumbnail, hlsUrl, id, liveDate, scheduledDate, shareText, state, thumbnail, title, type, user, videoOrientation, viewers, vodUrl] never=[channel, description, duration, featuredAttendees, visitors]
+09-18 15:19:24.155 I/HEM96   ( 5693): N24 HotMicStreamPage$Pagination populated=[currentPage, hasNext, perPage, totalCount, totalPages] never=[hasPrev]
+09-18 15:19:24.156 I/HEM96   ( 5693): N24 HotMicStreamSummary populated=[id, liveDate, scheduledDate, state, thumbnail, title, type, user] never=[channel, description, duration, featuredAttendees, hlsUrl, viewers, visitors, vodUrl]
+09-18 15:19:24.156 I/HEM96   ( 5693): N24 HotMicUser populated=[badge, displayName, id, profilePic] never=[bio, blocked, blockedUsers, followedByMe, followers, following, followingMe, instagramHandle, location, moderates, name, role, tikTokHandle, twitchHandle, twitterHandle, userRestrictions, verified, youTubeHandle]
+09-18 15:19:24.209 I/HEM96   ( 5693): ROW N24 INFO coverage lines above
+09-18 15:19:24.210 I/HEM96   ( 5693): AUTORUN COMPLETE

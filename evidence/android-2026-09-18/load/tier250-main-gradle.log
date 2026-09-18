@@ -1,0 +1,33 @@
+    LOAD [     0.3s] PREFLIGHT stream=71e76bb9 state=LIVE host=Chriss-MacBook-Pro-3.local jvm=17.0.20 os=Mac OS X 26.5.2
+    LOAD [     0.3s] CONFIG n=250 hold=300s ramp=5/s drain=10/s idle=120s chatting=50 chat_every=30s tokens=shared expected_rps=91.25 sdk=0.1.0-SNAPSHOT
+    LOAD [     0.3s] PHASE ramp
+    LOAD [     0.5s] SESSION 0 snapshot stream=LIVE user=BR Staging Test chats=20 polls=7 room=26
+    LOAD [     5.3s] SAMPLE phase=ramp active=24 reconnecting=0 failed=0 rps60=1.8/91.3 non2xx=0.0% poll_p95=371ms heap=50MB rss=167MB chat_sent=0 delivered=0 dup=0
+    LOAD [    35.4s] SAMPLE phase=ramp active=172 reconnecting=0 failed=0 rps60=27.0/91.3 non2xx=0.0% poll_p95=222ms heap=53MB rss=259MB chat_sent=13 delivered=1068 dup=98
+    LOAD [    51.2s] RAMP done started=250 failed=0
+    LOAD [    51.2s] PRESENCE[ramp_end] viewers_list=1 info_viewers=0 info_visitors=0 info_state=LIVE
+    LOAD [    51.2s] PHASE hold
+    LOAD [    65.5s] SAMPLE phase=hold active=250 reconnecting=0 failed=0 rps60=69.2/91.3 non2xx=0.0% poll_p95=222ms heap=232MB rss=557MB chat_sent=58 delivered=2029 dup=98
+    LOAD [    95.6s] SAMPLE phase=hold active=250 reconnecting=0 failed=0 rps60=88.8/91.3 non2xx=0.0% poll_p95=240ms heap=117MB rss=429MB chat_sent=108 delivered=4145 dup=287
+    LOAD [   125.7s] SAMPLE phase=hold active=250 reconnecting=0 failed=0 rps60=89.4/91.3 non2xx=0.0% poll_p95=274ms heap=137MB rss=347MB chat_sent=158 delivered=5761 dup=347
+    LOAD [   155.8s] SAMPLE phase=hold active=250 reconnecting=0 failed=0 rps60=91.7/91.3 non2xx=0.0% poll_p95=278ms heap=92MB rss=375MB chat_sent=208 delivered=7985 dup=347
+    LOAD [   185.9s] SAMPLE phase=hold active=250 reconnecting=0 failed=0 rps60=92.4/91.3 non2xx=0.0% poll_p95=278ms heap=69MB rss=361MB chat_sent=258 delivered=9491 dup=596
+    LOAD [   201.8s] PRESENCE[hold_mid] viewers_list=1 info_viewers=0 info_visitors=0 info_state=LIVE
+    LOAD [   216.0s] SAMPLE phase=hold active=250 reconnecting=0 failed=0 rps60=90.3/91.3 non2xx=0.0% poll_p95=314ms heap=76MB rss=259MB chat_sent=308 delivered=11481 dup=600
+    LOAD [   246.1s] SAMPLE phase=hold active=250 reconnecting=0 failed=0 rps60=89.5/91.3 non2xx=0.0% poll_p95=264ms heap=188MB rss=348MB chat_sent=358 delivered=13222 dup=1092
+    LOAD [   276.2s] SAMPLE phase=hold active=250 reconnecting=0 failed=0 rps60=92.0/91.3 non2xx=0.0% poll_p95=264ms heap=85MB rss=355MB chat_sent=408 delivered=14973 dup=1604
+    LOAD [   306.3s] SAMPLE phase=hold active=250 reconnecting=0 failed=0 rps60=92.7/91.3 non2xx=0.0% poll_p95=263ms heap=176MB rss=344MB chat_sent=458 delivered=16952 dup=2087
+    LOAD [   336.4s] SAMPLE phase=hold active=250 reconnecting=0 failed=0 rps60=90.3/91.3 non2xx=0.0% poll_p95=242ms heap=153MB rss=327MB chat_sent=508 delivered=18472 dup=2087
+    LOAD [   351.4s] PRESENCE[hold_end] viewers_list=1 info_viewers=0 info_visitors=0 info_state=LIVE
+    LOAD [   351.4s] PHASE drain
+    LOAD [   366.5s] SAMPLE phase=drain active=104 reconnecting=0 failed=0 rps60=84.5/91.3 non2xx=0.0% poll_p95=252ms heap=148MB rss=417MB chat_sent=537 delivered=20671 dup=2328
+    LOAD [   377.3s] DRAIN done stopped=250
+    LOAD [   377.3s] PHASE idle
+    LOAD [   396.6s] SAMPLE phase=idle active=0 reconnecting=0 failed=0 rps60=44.2/91.3 non2xx=0.0% poll_p95=277ms heap=128MB rss=169MB chat_sent=537 delivered=20671 dup=2328
+    LOAD [   426.7s] SAMPLE phase=idle active=0 reconnecting=0 failed=0 rps60=4.7/91.3 non2xx=0.0% poll_p95=275ms heap=130MB rss=80MB chat_sent=537 delivered=20671 dup=2328
+    LOAD [   456.8s] SAMPLE phase=idle active=0 reconnecting=0 failed=0 rps60=0.0/91.3 non2xx=0.0% poll_p95=0ms heap=131MB rss=202MB chat_sent=537 delivered=20671 dup=2328
+    LOAD [   486.9s] SAMPLE phase=idle active=0 reconnecting=0 failed=0 rps60=0.0/91.3 non2xx=0.0% poll_p95=0ms heap=131MB rss=72MB chat_sent=537 delivered=20671 dup=2328
+    LOAD [   497.3s] IDLE done sdk_requests_during_idle=0
+    LOAD [   497.4s] PRESENCE[idle_end] viewers_list=1 info_viewers=0 info_visitors=0 info_state=LIVE
+    LOAD [   497.4s] DONE requests=31593 statuses={200=31591, 0=2} stop_rule=none
+BUILD SUCCESSFUL in 8m 18s

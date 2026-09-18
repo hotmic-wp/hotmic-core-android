@@ -1,0 +1,6 @@
+README/MIGRATION Kotlin blocks: types 7 nested 7 calls 28 prose names 42
+SDK methods referenced and present: ['addChatMessageReaction', 'blockUser', 'blockUserFromStreamChat', 'copy', 'deleteChatMessage', 'fetchChatMessageReactions', 'fetchStream', 'fetchStreams', 'fetchUser', 'makeStreamSession', 'makeUserModerator', 'removeChatMessageReaction', 'reportChatMessage', 'sendChatMessage', 'start', 'stop', 'submitResponse', 'unblockUser']
+Non-SDK calls (host/framework, ignored): ['build', 'cancel', 'credential', 'fromUri', 'prepare', 'setChatFragment', 'setMediaItem', 'setStreamId', 'setUICallback', 'show']
+MISSING from core.api: ['Builder', 'ChatDelegatesListener', 'ChatReaction', 'Like', 'Live', 'Vod']
+SDK properties referenced and present: []
+Properties not in core.api (host/framework/local vars): ['collect', 'core', 'currentPage', 'gradle', 'hasNext', 'hotmic', 'kts', 'launch', 'media3', 'playWhenReady', 'player', 'player_fragment_container', 'session']

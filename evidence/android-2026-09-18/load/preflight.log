@@ -1,0 +1,11 @@
+2026-09-18T22:24:23Z preflight clientB-run3 N=1 stream=71e76bb9 state=LIVE host=Chriss-MacBook-Pro-3.local
+2026-09-18T22:30:47Z preflight clientB-run4 N=1 stream=71e76bb9 state=LIVE host=Chriss-MacBook-Pro-3.local
+2026-09-18T22:39:00Z preflight clientB-run6 N=1 stream=71e76bb9 state=LIVE host=Chriss-MacBook-Pro-3.local
+2026-09-18T22:44:37Z preflight clientB-run7 N=1 stream=71e76bb9 state=LIVE host=Chriss-MacBook-Pro-3.local
+2026-09-18T22:58:35Z preflight tier25-main-shared N=25 stream=71e76bb9 state=LIVE host=Chriss-MacBook-Pro-3.local
+2026-09-18T23:05:47Z preflight tier25-main-users N=25 stream=71e76bb9 state=LIVE host=Chriss-MacBook-Pro-3.local
+2026-09-18T23:12:59Z preflight tier250-main N=250 stream=71e76bb9 state=LIVE host=Chriss-MacBook-Pro-3.local
+2026-09-18T23:21:20Z preflight tier250-fixes N=250 stream=71e76bb9 state=LIVE host=Chriss-MacBook-Pro-3.local
+2026-09-18T23:29:39Z preflight tier25-fixes-users N=25 stream=71e76bb9 state=LIVE host=Chriss-MacBook-Pro-3.local
+2026-09-18T23:40:38Z preflight clientB-fixrun1 N=1 stream=71e76bb9 state=LIVE host=Chriss-MacBook-Pro-3.local
+2026-09-18T23:46:05Z preflight clientB-fixrun3 N=1 stream=71e76bb9 state=LIVE host=Chriss-MacBook-Pro-3.local

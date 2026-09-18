@@ -1,0 +1,2 @@
+session,user,start_ms,start_error,final_state,reconnecting_events,max_reconnect_attempt,connected_events,disconnected_events,chat_attempted,chat_sent,chat_send_p50_ms,chat_delivered,duplicate_chat_deliveries,stream_updated,participants_updated,poll_events,events,stop_ms
+0,user0,268,,stopped,0,0,1,1,20,20,76,10,5,2,1,4,30,45
