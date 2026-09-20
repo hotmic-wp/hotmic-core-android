@@ -9,12 +9,13 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        // HotMic Core is resolved from Maven Local for now. Publish it from the
-        // private `hotmic-core-android-source` repo with `./gradlew :core:publishToMavenLocal`.
-        // GitHub Packages (hotmic-wp/hotmic-android-sdk) distribution comes later.
-        mavenLocal()
+        // HotMic Core comes from the HotMic Maven repository below. Internal development against
+        // an unreleased build: `./gradlew :core:publishToMavenLocal` in hotmic-core-android-source,
+        // then uncomment the next line (and match the version in Example/build.gradle.kts).
+        // mavenLocal()
         google()
         mavenCentral()
+        maven { url = uri("https://d3ec5su7pmd3cn.cloudfront.net/") } // HotMic Core
     }
 }
 

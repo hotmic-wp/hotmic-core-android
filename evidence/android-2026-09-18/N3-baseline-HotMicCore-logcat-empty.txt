@@ -1,0 +1,8 @@
+# N3 — baseline SDK (main @ 51de67e), sample constructs HotMicClient(context, …, logLevel = LogLevel.DEBUG); 40 s session held (2026-09-19T01:00:30Z)
+# $ adb logcat -d -s HotMicCore   (expected on a logging SDK: one line per request; observed: nothing)
+# lines with tag HotMicCore: 0
+# for comparison, logcat lines from the sample's pid that mention 'hotmic' (excluding the HEM96 tag): 6 — all system lines
+#   (ziparchive/nativeloader/GraphicsEnvironment/ProfileInstaller naming the package io.hotmic.core.publicsample); none from the SDK.
+# the session was up (HEM96 lines): 4 samples, 10 events
+93): ROW HOLD begin
+93): ROW HOLD PASS seconds=40 finalState=Active everDisconnected=false reconnectingEvents=0 chats=0 dup=0 sent=0 events=7

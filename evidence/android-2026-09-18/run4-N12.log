@@ -1,0 +1,38 @@
+--------- beginning of main
+09-18 15:30:43.896 I/HEM96   ( 6253): AUTORUN start rows=N12
+09-18 15:30:43.906 I/HEM96   ( 6253): ROW N12 begin
+09-18 15:30:45.186 I/HEM96   ( 6253): N12 start_ms=1262 state=Active stream=LIVE user=BR Staging Test chats=20 polls=7 room=1
+09-18 15:30:45.188 I/HEM96   ( 6253): N12 EVENT 2026-09-18T22:30:45.187Z StateChanged(Active)
+09-18 15:30:45.189 I/HEM96   ( 6253): N12 EVENT 2026-09-18T22:30:45.189Z ConnectionChanged(Connected)
+09-18 15:30:45.241 I/HEM96   ( 6253): N12 blockUser(B) → ok
+09-18 15:30:45.242 I/HEM96   ( 6253): N12 blocked B; holding 40s — B messages must NOT arrive
+09-18 15:30:48.822 I/HEM96   ( 6253): N12 EVENT 2026-09-18T22:30:48.821Z StreamUpdated(state=LIVE viewers=1)
+09-18 15:30:48.823 I/HEM96   ( 6253): N12 EVENT 2026-09-18T22:30:48.822Z PollUpdated(248f3162 closed=true responses=1 my=99fb675f)
+09-18 15:30:48.825 I/HEM96   ( 6253): N12 EVENT 2026-09-18T22:30:48.824Z PollUpdated(5d98220b closed=false responses=1 my=aa69e2fe)
+09-18 15:30:48.825 I/HEM96   ( 6253): N12 EVENT 2026-09-18T22:30:48.825Z PollUpdated(7e9b3c6d closed=false responses=1 my=53a2ea31)
+09-18 15:30:48.826 I/HEM96   ( 6253): N12 EVENT 2026-09-18T22:30:48.826Z PollUpdated(a3c5650a closed=false responses=1 my=564354fa)
+09-18 15:31:15.251 I/HEM96   ( 6253): N12 EVENT 2026-09-18T22:31:15.250Z StreamUpdated(state=LIVE viewers=2)
+09-18 15:31:25.244 I/HEM96   ( 6253): N12 while blocked: batches with B messages=0 (new ids 0)
+09-18 15:31:25.301 I/HEM96   ( 6253): N12 unblockUser(B) → ok
+09-18 15:31:28.179 I/HEM96   ( 6253): N12 CHAT id=4c8a9c29-73bd-4749-8c65-7ace538773b3 user=hem96-an created=2026-09-18T22:31:21Z received=2026-09-18T22:31:28.179Z dup=false text=LclientB-run4 s0 n6 2026-09-18T22:31:21.
+09-18 15:31:28.181 I/HEM96   ( 6253): N12 EVENT 2026-09-18T22:31:28.180Z ChatBatchReceived(messages=1 reactions=0 ids=4c8a9c29)
+09-18 15:31:31.190 I/HEM96   ( 6253): N12 CHAT id=a64b22af-42b6-4b3b-a8b2-fd838f204a2d user=hem96-an created=2026-09-18T22:31:26Z received=2026-09-18T22:31:31.190Z dup=false text=LclientB-run4 s0 n7 2026-09-18T22:31:26.
+09-18 15:31:31.191 I/HEM96   ( 6253): N12 EVENT 2026-09-18T22:31:31.191Z ChatBatchReceived(messages=1 reactions=0 ids=a64b22af)
+09-18 15:31:37.205 I/HEM96   ( 6253): N12 CHAT id=55ea3b7e-af28-401b-85f9-c81879371cc9 user=hem96-an created=2026-09-18T22:31:31Z received=2026-09-18T22:31:37.204Z dup=false text=LclientB-run4 s0 n8 2026-09-18T22:31:31.
+09-18 15:31:37.207 I/HEM96   ( 6253): N12 EVENT 2026-09-18T22:31:37.206Z ChatBatchReceived(messages=1 reactions=0 ids=55ea3b7e)
+09-18 15:31:40.215 I/HEM96   ( 6253): N12 CHAT id=bf43b246-5cdc-4fdf-8b4d-85f61c59a655 user=hem96-an created=2026-09-18T22:31:36Z received=2026-09-18T22:31:40.213Z dup=false text=LclientB-run4 s0 n9 2026-09-18T22:31:36.
+09-18 15:31:40.216 I/HEM96   ( 6253): N12 EVENT 2026-09-18T22:31:40.216Z ChatBatchReceived(messages=1 reactions=0 ids=bf43b246)
+09-18 15:31:43.224 I/HEM96   ( 6253): N12 CHAT id=bf43b246-5cdc-4fdf-8b4d-85f61c59a655 user=hem96-an created=2026-09-18T22:31:36Z received=2026-09-18T22:31:43.223Z dup=true text=LclientB-run4 s0 n9 2026-09-18T22:31:36.
+09-18 15:31:43.225 I/HEM96   ( 6253): N12 EVENT 2026-09-18T22:31:43.224Z ChatBatchReceived(messages=1 reactions=0 ids=bf43b246)
+09-18 15:31:45.305 I/HEM96   ( 6253): N12 after unblock: batches with B messages in last 20s=5
+09-18 15:31:45.353 I/HEM96   ( 6253): N12 fetchUser(me).blockedUsers=0
+09-18 15:31:45.401 I/HEM96   ( 6253): N12 blockUser(self) → Server(500, Cannot block yourself)
+09-18 15:31:45.451 I/HEM96   ( 6253): N12 blockUser(bogus) → Server(500, User not found)
+09-18 15:31:45.500 I/HEM96   ( 6253): N12 unblockUser(bogus) → ok
+09-18 15:31:45.549 I/HEM96   ( 6253): N12 makeUserModerator(B) as viewer → Server(500, WARN: addModerator not authorized)
+09-18 15:31:45.600 I/HEM96   ( 6253): N12 blockUserFromStreamChat(B) as viewer → Server(400, null)
+09-18 15:31:45.601 I/HEM96   ( 6253): N12 EVENT 2026-09-18T22:31:45.601Z StateChanged(Stopping)
+09-18 15:31:45.650 I/HEM96   ( 6253): N12 EVENT 2026-09-18T22:31:45.650Z ConnectionChanged(Disconnected)
+09-18 15:31:45.651 I/HEM96   ( 6253): N12 EVENT 2026-09-18T22:31:45.651Z StateChanged(Stopped)
+09-18 15:31:45.652 I/HEM96   ( 6253): ROW N12 INFO see lines above
+09-18 15:31:45.652 I/HEM96   ( 6253): AUTORUN COMPLETE
