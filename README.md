@@ -27,7 +27,7 @@ Core targets `compileSdk 34` and is built with Gradle 8.11.1, AGP 8.10.1, and Ko
 
 The `Example/` app demonstrates loading streams, starting a stream session, monitoring session state, playing video with Media3, sending and receiving chat, answering polls, blocking users, and stopping a session cleanly. Add your API key and access token in the Settings screen.
 
-Core is consumed from Maven Central, so the Example builds from a plain clone:
+Core is consumed from the HotMic Maven repository, so the Example builds from a plain clone:
 
 ```bash
 export JAVA_HOME=/opt/homebrew/opt/openjdk@17
@@ -40,7 +40,7 @@ Optionally prefill the Settings screen for local QA by copying `local.properties
 
 ## Installation
 
-HotMicCore is published to [Maven Central](https://central.sonatype.com/artifact/io.hotmic.core/hotmic-core-android) — no extra repository and no credentials are needed:
+HotMicCore is served from the HotMic Maven repository at `https://d3ec5su7pmd3cn.cloudfront.net/`. Add it next to `mavenCentral()` — no token and no account are needed:
 
 ```kotlin
 // settings.gradle.kts
@@ -48,6 +48,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://d3ec5su7pmd3cn.cloudfront.net/") } // HotMic Core
     }
 }
 
@@ -346,4 +347,4 @@ Every operation throws a `HotMicError`:
 
 ## Distribution
 
-`io.hotmic.core:hotmic-core-android` is published to Maven Central (`https://repo1.maven.org/maven2/io/hotmic/core/hotmic-core-android/`). This repository holds the documentation and the Example app; it does not publish anything.
+`io.hotmic.core:hotmic-core-android` is published to the HotMic Maven repository (`https://d3ec5su7pmd3cn.cloudfront.net/io/hotmic/core/hotmic-core-android/`). This repository holds the documentation and the Example app; it does not publish anything.

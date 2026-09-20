@@ -4,7 +4,7 @@ HotMicCore makes the HotMic service available to your app without a prebuilt use
 
 ## Requirements and Installation
 
-HotMicCore requires `minSdk 23` and JDK 17. It is a plain AAR on Maven Central — no CodeArtifact or GitHub Packages token is needed.
+HotMicCore requires `minSdk 23` and JDK 17. It is a plain AAR served from the HotMic Maven repository (`https://d3ec5su7pmd3cn.cloudfront.net/`, added next to `mavenCentral()`) — no token of any kind is needed, unlike the CodeArtifact / GitHub Packages credentials the SDK required.
 
 Remove the HotMic Maven repository (CodeArtifact or `maven.pkg.github.com/hotmic-wp/android-sdk`, with its credentials) and the SDK dependency:
 

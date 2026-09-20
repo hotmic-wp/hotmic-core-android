@@ -63,7 +63,7 @@ android {
 }
 
 dependencies {
-    // HotMic Core (headless), from Maven Central — see settings.gradle.kts.
+    // HotMic Core (headless), from the HotMic Maven repository — see settings.gradle.kts.
     implementation("io.hotmic.core:hotmic-core-android:1.0.0")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
