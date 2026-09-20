@@ -4,9 +4,9 @@ HotMicCore makes the HotMic service available to your app without a prebuilt use
 
 ## Requirements and Installation
 
-HotMicCore requires `minSdk 23` and JDK 17. It is a plain AAR consumed from a Maven repository (Maven Local today; GitHub Packages later) — no CodeArtifact token is needed.
+HotMicCore requires `minSdk 23` and JDK 17. It is a plain AAR on Maven Central — no CodeArtifact or GitHub Packages token is needed.
 
-Remove the CodeArtifact repository and the SDK dependency:
+Remove the HotMic Maven repository (CodeArtifact or `maven.pkg.github.com/hotmic-wp/android-sdk`, with its credentials) and the SDK dependency:
 
 ```kotlin
 // remove
@@ -16,7 +16,7 @@ implementation("io.hotmic.player:hotmic-android-sdk:<version>")
 Add Core (see [README.md](README.md#installation)) and the player of your choice:
 
 ```kotlin
-implementation("io.hotmic.core:hotmic-core-android:0.1.0-SNAPSHOT")
+implementation("io.hotmic.core:hotmic-core-android:1.0.0")
 implementation("androidx.media3:media3-exoplayer:1.4.1")
 implementation("androidx.media3:media3-exoplayer-hls:1.4.1")
 ```

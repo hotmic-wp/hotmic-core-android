@@ -27,16 +27,12 @@ Core targets `compileSdk 34` and is built with Gradle 8.11.1, AGP 8.10.1, and Ko
 
 The `Example/` app demonstrates loading streams, starting a stream session, monitoring session state, playing video with Media3, sending and receiving chat, answering polls, blocking users, and stopping a session cleanly. Add your API key and access token in the Settings screen.
 
-Core is not vendored into this repository. Until it is published to GitHub Packages, publish it to your local Maven repository from the private `hotmic-core-android-source` repo first:
+Core is consumed from Maven Central, so the Example builds from a plain clone:
 
 ```bash
 export JAVA_HOME=/opt/homebrew/opt/openjdk@17
 export ANDROID_HOME=/opt/homebrew/share/android-commandlinetools
 
-# 1. In hotmic-core-android-source: publish Core to ~/.m2
-./gradlew :core:publishToMavenLocal
-
-# 2. In this repo: build and install the Example
 ./gradlew :example:installDebug
 ```
 
@@ -44,13 +40,12 @@ Optionally prefill the Settings screen for local QA by copying `local.properties
 
 ## Installation
 
-Add `mavenLocal()` to your repositories and depend on Core:
+HotMicCore is published to [Maven Central](https://central.sonatype.com/artifact/io.hotmic.core/hotmic-core-android) — no extra repository and no credentials are needed:
 
 ```kotlin
 // settings.gradle.kts
 dependencyResolutionManagement {
     repositories {
-        mavenLocal() // HotMic Core. GitHub Packages (hotmic-wp/hotmic-android-sdk) coming later.
         google()
         mavenCentral()
     }
@@ -58,7 +53,8 @@ dependencyResolutionManagement {
 
 // app/build.gradle.kts
 dependencies {
-    implementation("io.hotmic.core:hotmic-core-android:0.1.0-SNAPSHOT")
+    implementation("io.hotmic.core:hotmic-core-android:1.0.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0") // the API is suspend-based
 
     // Your player — Core does not bundle one.
     implementation("androidx.media3:media3-exoplayer:1.4.1")
@@ -350,4 +346,4 @@ Every operation throws a `HotMicError`:
 
 ## Distribution
 
-`io.hotmic.core:hotmic-core-android` is currently consumed from Maven Local (`publishToMavenLocal` in the private source repo). Publishing to GitHub Packages under `hotmic-wp/hotmic-android-sdk` will follow; this repository does not publish anything.
+`io.hotmic.core:hotmic-core-android` is published to Maven Central (`https://repo1.maven.org/maven2/io/hotmic/core/hotmic-core-android/`). This repository holds the documentation and the Example app; it does not publish anything.
