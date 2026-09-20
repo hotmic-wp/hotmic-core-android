@@ -1,2 +1,0 @@
-session,user,start_ms,start_error,final_state,reconnecting_events,max_reconnect_attempt,connected_events,disconnected_events,chat_attempted,chat_sent,chat_send_p50_ms,chat_delivered,duplicate_chat_deliveries,stream_updated,participants_updated,poll_events,events,stop_ms
-0,user0,147,,stopped,0,0,1,1,17,17,71,0,0,2,0,4,12,47

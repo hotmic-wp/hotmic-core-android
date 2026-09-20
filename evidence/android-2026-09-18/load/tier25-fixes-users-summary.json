@@ -1,1 +1,0 @@
-{"tag":"tier25-fixes-users","n":25,"started_wall":"2026-09-18T23:29:40Z","ended_wall":"2026-09-18T23:36:49Z","hold_s":300,"chatting":25,"chat_every_s":30,"tokens":"distinct","expected_rps":9.792,"requests_sdk":3066,"status_counts":{"200":3066},"started":25,"start_failed":0,"stop_rule":null,"sdk_version":"0.1.0-SNAPSHOT","host":"Chriss-MacBook-Pro-3.local","jvm":"17.0.20"}

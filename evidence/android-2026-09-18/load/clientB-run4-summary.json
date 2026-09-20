@@ -1,1 +1,0 @@
-{"tag":"clientB-run4","n":1,"started_wall":"2026-09-18T22:30:48Z","ended_wall":"2026-09-18T22:32:22Z","hold_s":90,"chatting":1,"chat_every_s":5,"tokens":"distinct","expected_rps":0.558,"requests_sdk":53,"status_counts":{"200":53},"started":1,"start_failed":0,"stop_rule":null,"sdk_version":"0.1.0-SNAPSHOT","host":"Chriss-MacBook-Pro-3.local","jvm":"17.0.20"}
