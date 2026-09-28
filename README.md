@@ -16,12 +16,12 @@ See [MIGRATION.md](MIGRATION.md) to migrate to HotMicCore from the HotMic Androi
 
 ## Requirements
 
-- Android **minSdk 23** (Android 6.0) or newer
+- Android **minSdk 23**, compiled and tested against API 36
 - **JDK 17** for building
 - Kotlin 2.1+ with `kotlinx.coroutines` (the API is `suspend`-based; a callback listener is available for session events)
 - A video player owned by your app — the Example uses [Media3 ExoPlayer](https://developer.android.com/media/media3/exoplayer)
 
-Core targets `compileSdk 34` and is built with Gradle 8.11.1, AGP 8.10.1, and Kotlin 2.1.0.
+Built with Gradle 8.11.1, AGP 8.10.1, and Kotlin 2.1.0.
 
 ## Example
 

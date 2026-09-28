@@ -22,12 +22,12 @@ fun localProp(key: String): String =
 
 android {
     namespace = "io.hotmic.core.example"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "io.hotmic.core.example"
         minSdk = 23
-        targetSdk = 34
+        targetSdk = 36
         versionCode = 1
         versionName = "0.1.0"
 
