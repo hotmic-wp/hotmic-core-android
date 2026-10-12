@@ -44,9 +44,13 @@ class StreamSessionActivity : AppCompatActivity() {
     private val logLines = ArrayDeque<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        prepareEdgeToEdge()
         super.onCreate(savedInstanceState)
         binding = ActivitySessionBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        // Root padding keeps the player, chat field, and stop control inside system bars.
+        // Insets are consumed here so PlayerView does not pad itself again.
+        binding.root.applySystemBarInsets()
 
         val streamId = intent.getStringExtra(EXTRA_STREAM_ID).orEmpty()
         val credentials = CredentialStore.load(this)

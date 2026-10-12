@@ -47,9 +47,11 @@ class StreamsActivity : AppCompatActivity() {
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        prepareEdgeToEdge()
         super.onCreate(savedInstanceState)
         binding = ActivityStreamsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.root.applySystemBarInsets()
 
         binding.streamList.layoutManager = LinearLayoutManager(this)
         binding.streamList.adapter = adapter
