@@ -7,6 +7,7 @@ See [MIGRATION.md](MIGRATION.md) to migrate to HotMicCore from the HotMic Androi
 ## Features
 
 - Fetch live, scheduled, and video-on-demand replay streams
+- Fetch live viewer counts and recent comments for up to 20 streams without a session
 - Retrieve stream and user information
 - Observe stream updates
 - Build a chat interface using the HotMic service
@@ -54,7 +55,7 @@ dependencyResolutionManagement {
 
 // app/build.gradle.kts
 dependencies {
-    implementation("io.hotmic.core:hotmic-core-android:1.0.0")
+    implementation("io.hotmic.core:hotmic-core-android:1.1.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0") // the API is suspend-based
 
     // Your player — Core does not bundle one.
@@ -138,6 +139,97 @@ val stream = hotMic.fetchStream(streamId)
 These requests return `HotMicStreamSummary`; full `HotMicStream` details are provided when a stream session is started.
 
 All requests are `suspend` functions and throw `HotMicError` on failure.
+
+### Live summaries
+
+Use `fetchLiveSummaries(streamIds, commentLimit)` to put viewer counts and recent
+comments on live tiles without opening chat. No stream session or presence is
+needed, so the caller does not count as a viewer. Use the usual API key and viewer
+access token; authentication is still required.
+
+Pass 1–20 unique stream IDs and a comment limit from 0–5 (default 2). Core trims
+whitespace, drops empty IDs, and removes duplicates while keeping request order.
+Each ID must contain 1–64 ASCII letters, digits, underscores or hyphens. Invalid
+input throws `HotMicError.InvalidRequest` before a request is sent. A limit of 0
+omits recent comments; a pinned comment can still be returned.
+
+The returned `HotMicLiveSummaryPage` has `generatedAt`, `pollInterval` in seconds,
+and `streams` in request order. Each summary has `streamId`, `found`, `deleted`,
+optional `state`, `viewersCount` and `pinnedComment`, `comments` (oldest first), and
+`updatedAt`. A requested ID the server does not return is omitted. Handle
+`found == false` and `deleted == true` by hiding or replacing the tile. Viewer
+counts may be unavailable rather than zero. Dates are ISO-8601 strings, matching
+Core's other Android models.
+
+Summaries are shared and cached per tenant. **Comments are not filtered for the
+viewer's blocks.** Filter both recent and pinned comments by `userId` before
+rendering. Author IDs and dates can be absent; choose how your app handles those
+comments. A pinned comment may also be present in `comments`.
+
+Core starts no polling task. The host should poll at the returned `pollInterval`
+and cancel its job when the tiles leave the screen. This example prints tile
+values; replace the print calls with your app's rendering code. The job is a child
+of the supplied scope (for example, a screen's `lifecycleScope`):
+
+```kotlin
+import io.hotmic.core.HotMicClient
+import io.hotmic.core.HotMicError
+import kotlinx.coroutines.CancellationException
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.ensureActive
+import kotlinx.coroutines.isActive
+import kotlinx.coroutines.launch
+
+fun CoroutineScope.startLiveTilePolling(
+    client: HotMicClient,
+    streamIds: List<String>,
+    blockedUserIds: Set<String>,
+): Job = launch {
+    try {
+        while (isActive) {
+            val page = client.fetchLiveSummaries(streamIds, commentLimit = 2)
+            ensureActive()
+            for (summary in page.streams) {
+                if (!summary.found || summary.deleted) {
+                    println("Hide tile ${summary.streamId}")
+                    continue
+                }
+                val visible = summary.comments.filter { comment ->
+                    // This example hides comments with an unknown author.
+                    comment.userId?.let { it !in blockedUserIds } == true
+                }
+                val pinned = summary.pinnedComment?.takeIf { comment ->
+                    comment.userId?.let { it !in blockedUserIds } == true
+                }
+                println("${summary.streamId}: ${summary.viewersCount}")
+                println("Recent: ${visible.map { it.text }}; pinned: ${pinned?.text}")
+            }
+            delay((page.pollInterval * 1_000).toLong())
+        }
+    } catch (cancelled: CancellationException) {
+        throw cancelled
+    } catch (_: HotMicError.Cancelled) {
+        // Core maps cancellation during an HTTP request to this error.
+    } catch (error: HotMicError) {
+        println("Live summaries failed: $error")
+        // Let the host decide when to retry, with backoff.
+    }
+}
+
+val pollingJob = lifecycleScope.startLiveTilePolling(
+    client,
+    streamIds = listOf("stream-1", "stream-2"),
+    blockedUserIds = blockedUserIds,
+)
+// When the tiles leave the screen (or blocks/IDs change):
+pollingJob.cancel()
+// Cancelling the owning scope also cancels the polling job and in-flight request.
+```
+
+All three summary models have public constructors for host tests and previews.
+Like Core's other Android fetches, this is a suspend API.
 
 ### Stream Session
 
