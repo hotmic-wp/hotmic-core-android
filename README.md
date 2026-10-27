@@ -8,6 +8,7 @@ See [MIGRATION.md](MIGRATION.md) to migrate to HotMicCore from the HotMic Androi
 
 - Fetch live, scheduled, and video-on-demand replay streams
 - Fetch live viewer counts and recent comments for up to 20 streams without a session
+- Keep a guest signed in past the 1-day access token with `accessTokenProvider`
 - Retrieve stream and user information
 - Observe stream updates
 - Build a chat interface using the HotMic service
@@ -55,7 +56,7 @@ dependencyResolutionManagement {
 
 // app/build.gradle.kts
 dependencies {
-    implementation("io.hotmic.core:hotmic-core-android:1.1.0")
+    implementation("io.hotmic.core:hotmic-core-android:1.1.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0") // the API is suspend-based
 
     // Your player — Core does not bundle one.
@@ -100,7 +101,21 @@ Create the access token on your backend for the authenticated user by signing an
 }
 ```
 
-`profile_pic` and `badge` are optional. Create a new `HotMicClient` when the access token changes.
+`profile_pic` and `badge` are optional. A client created with an access token string keeps that token. An HTTP 401 throws `HotMicError.Unauthorized` and is not retried. Create a new `HotMicClient` when that token changes.
+
+Guest tokens from `POST /auth/anonymous` expire after one day. To keep that guest signed in, create the client with `accessTokenProvider` instead. There is a matching overload of the `Context` constructor and of the `Context`-free constructor:
+
+```kotlin
+val hotMic = HotMicClient(
+    context = applicationContext,
+    apiKey = apiKey,
+    accessTokenProvider = {
+        currentAccessToken()
+    },
+)
+```
+
+The provider is called on the first request, and again only after HTTP 401. Return a currently valid token. For a guest, re-mint `POST /auth/anonymous` with the same `hm-device-id` and return the new access token. Concurrent 401s share one provider call. Cancelling every request waiting on that call cancels it; while any request is still waiting, the call keeps running. A request that started with an older token retries with the refreshed token and does not call the provider again. The request is retried once. A second 401, or an error from the provider, throws `HotMicError.Unauthorized`. HTTP 500 and transport failures, including timeouts, are not retried. The token is never logged. Live sessions and polling keep running across a successful refresh.
 
 Logging is disabled by default. To enable diagnostics, pass a `logLevel` (`LogLevel.ERROR`, `INFO`, or `DEBUG`) to the constructor.
 
