@@ -56,7 +56,7 @@ dependencyResolutionManagement {
 
 // app/build.gradle.kts
 dependencies {
-    implementation("io.hotmic.core:hotmic-core-android:1.1.1")
+    implementation("io.hotmic.core:hotmic-core-android:1.1.2")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0") // the API is suspend-based
 
     // Your player — Core does not bundle one.
@@ -316,6 +316,8 @@ Events also report changes to session content:
 - `ChatBatchReceived`, `ChatMessageDeleted`, and `ChatMessageReactionDeleted` report chat and reaction changes.
 - `PollCreated`, `PollUpdated`, and `PollDeleted` report poll changes.
 - `ParticipantsUpdated` reports changes to participant groups.
+
+Ended or deleted streams never close the session. Chat, reactions, polls and reports keep working until you call `stop()`. `StreamEnded` and `StreamDeleted` each fire at most once, and only when the stream changes during the session. A replay or an already-deleted stream emits neither.
 
 Call `stop()` and release the session when the experience closes. A stopped or failed session cannot be started again.
 

@@ -105,8 +105,8 @@ Handle each event by updating the corresponding app state:
 | `StateChanged` | Reflect session lifecycle changes if desired. |
 | `ConnectionChanged` | Show connected or reconnecting state if desired. |
 | `StreamUpdated` | Replace displayed stream data and handle changes. |
-| `StreamEnded` | Transition to your end-of-stream experience. |
-| `StreamDeleted` | Close the stream experience (the session stops itself). |
+| `StreamEnded` | The stream ended during the session. Update your UI if desired; the session stays open. |
+| `StreamDeleted` | The stream was deleted during the session. Update your UI if desired; the session stays open until `stop()`. |
 | `ChatBatchReceived` | Add the messages and reactions into local chat state. |
 | `ChatMessageDeleted` | Remove the matching local message. |
 | `ChatMessageReactionDeleted` | Remove the matching local reaction. |

@@ -147,7 +147,7 @@ class StreamSessionActivity : AppCompatActivity() {
                 player?.pause()
             }
             HotMicStreamSession.Event.StreamDeleted -> {
-                // Core stops the session automatically after this event.
+                // Informational: the session stays open until stop().
                 log("stream deleted")
                 player?.pause()
             }
