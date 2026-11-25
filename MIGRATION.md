@@ -144,7 +144,7 @@ Replace `HMChatViewModel.sendChat(...)`, `sendReaction(...)`, and the chat panel
 
 `ChatReaction.LIKE` / `FIRE` / `LAUGH` / `ANGER` / `SADNESS` map to `HotMicChatMessage.Reaction.ReactionType.Like` / `Fire` / `Laugh` / `Anger` / `Sadness`.
 
-Chat and reaction updates arrive in `ChatBatchReceived` events instead of `chatTipsData`. Messages you send, delete, or react to are not echoed back through events — apply them locally immediately.
+Chat and reaction updates arrive in `ChatBatchReceived` events instead of `chatTipsData`. Apply successful sends, deletes, and reactions locally. If the server accepts a message and the send response fails, the message can arrive in a later `ChatBatchReceived` event.
 
 Tips (`Tip`, `SampleTipDelegate`) are not part of Core.
 
