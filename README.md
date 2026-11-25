@@ -56,7 +56,7 @@ dependencyResolutionManagement {
 
 // app/build.gradle.kts
 dependencies {
-    implementation("io.hotmic.core:hotmic-core-android:1.1.2")
+    implementation("io.hotmic.core:hotmic-core-android:1.1.3")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0") // the API is suspend-based
 
     // Your player — Core does not bundle one.
@@ -67,6 +67,8 @@ dependencies {
 ```
 
 Declare the `INTERNET` permission in your manifest (Core does not merge one in). Core ships consumer ProGuard/R8 rules, so no extra keep rules are needed when you enable minification.
+
+1.1.3 is a bug-fix release. No app code changes are needed. `stop()` still ends the session.
 
 ## Usage
 
@@ -357,7 +359,7 @@ Send a message after the session has started:
 val message = session.chat.sendChatMessage("Hello!")
 ```
 
-Insert the chat message immediately as it will not be delivered through session events.
+Insert the returned chat message immediately. If the server accepts the message and the send response fails, the message can arrive in a later `ChatBatchReceived` event.
 
 Delete a chat message:
 
